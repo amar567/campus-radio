@@ -12,14 +12,107 @@
     <title>Campus radio</title>
 
     <!-- schedule CSS and JS -->
-    <link rel="stylesheet" href="schedule.css">
-    <script src="schedule.js"></script>
+    <link rel="./css/stylesheet" href="schedule.css">
+    <script src="./js/schedule.js"></script>
+
+    <!--Abhivahya-->
+    <style>
+    body {
+      background: inherit;
+      padding: 50px 0;
+      font: 15px/20px Arial, sans-serif;
+    }
+
+    .container-c {
+      margin: 0 auto;
+      width: 300px;
+      height: 432px;
+      position: relative;
+      perspective: 10000px;
+    }
+
+    .carousel {
+
+      position: absolute;
+      transform-style: preserve-3d;
+      transition: transform 1s;
+    }
+
+    .item {
+      display: block;
+      position: absolute;
+      background: #111;
+      width: 100%;
+      height: 423px;
+      line-height: 200px;
+      font-size: 5em;
+      text-align: center;
+      color: #FFF;
+      opacity: 0.95;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .a {
+      transform: rotateY(0deg) translateZ(310px);
+
+    }
+    .b {
+      transform: rotateY(60deg) translateZ(310px);
+
+    }
+    .c {
+      transform: rotateY(120deg) translateZ(310px);
+
+    }
+    .d {
+      transform: rotateY(180deg) translateZ(310px);
+
+    }
+    .e {
+      transform: rotateY(240deg) translateZ(310px);
+
+    }
+    .f {
+      transform: rotateY(300deg) translateZ(310px);
+
+    }
+
+    .next, .prev {
+      color: #222;
+      position: absolute;
+      top: 50%;
+      padding: 10px 16px;
+      cursor: pointer;
+      background: gray;
+      opacity: 0.8;
+      border-radius: 50px;
+      border-top: 1px solid #FFF;
+    }
+    .next:hover, .prev:hover { color: #000; }
+    .next:active, .prev:active {
+      top: 51%;
+    }
+    .next { right: 5em; }
+    .prev { left: 5em; }
+    </style>
+
+      <script>
+      window.console = window.console || function(t) {};
+    </script>
+
+
+      <script>
+      if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage("resize", "*");
+      }
+    </script>
 
     <!--flipcard CSS and JS-->
-    <link href='bootstrap.css' rel='stylesheet' />
-    <link href='flipcard.css' rel='stylesheet' />
+    <link href='./css/bootstrap.css' rel='stylesheet' />
+    <link href='./js/flipcard.css' rel='stylesheet' />
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-    <script src="flipcard.js"></script>
+    <script src="./js/flipcard.js"></script>
 
   </head>
   <body onload="schedule()">
@@ -35,17 +128,17 @@
       </div>
 
     <div class="container-fluid" style="postion: absolute;left:0px;top:0px;">
-      <!--this week's video-->
         <div class="row">
-          <br><br><br>
-          <p  style="font-size: 200%;text-align: center;">NASA Live :special talk</p>
         <div class="col-md-3">
           <!--spacer-->
         </div>
         <div class="col-md-6">
-          <div class="video-container">
-            <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/21X5lGlDOfg" frameborder="0" loading="lazy" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
-          </div>
+          <!--this week's video-->
+            <br><br><br>
+            <p  style="font-size: 200%;text-align: center;">NASA Live :special talk</p>
+            <div class="video-container">
+              <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/21X5lGlDOfg" frameborder="0" loading="lazy" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+            </div>
         </div>
         <div class="col-md-3" style="text-align: center;">
           <!--p>
@@ -53,6 +146,25 @@
           </p-->
         </div>
       </div><br><br><br><br>
+
+      <!--Abhivahya-->
+        <h1 class="title">
+            Abhivahya
+            <br>
+            <small>The Campus Radio news letter</small>
+        </h1>
+          <div class="container-c" style="">
+            <div class="carousel  " style="transform: rotateY(0deg);">
+              <div class="item a"><a href="https://drive.google.com/file/d/1utxQgbXJbNA06Y0cHyqJA3DUVBmwaK-d/view"><img src="./images/october-monthly.png" width="300px" height="423px" style="border-radius: 10px;"></a></div>
+              <div class="item b"><a href="file:///C:/Users/INTEL/Desktop/CR/Newsletter-week%2311.pdf"><img src="./images/vol-11.png" width="300px" height="423px" style="border-radius: 10px;"></a></div>
+              <div class="item c"><a href="file:///C:/Users/INTEL/Desktop/CR/Newsletter-week%2311.pdf"><img src="./images/vol-11-3.png" width="300px" height="423px" style="border-radius: 10px;"></a></div>
+              <div class="item d"></div>
+              <div class="item e"><a href="file:///C:/Users/INTEL/Desktop/CR/Newsletter-week%2311.pdf"><img src="./images/vol-11-2.png" width="300px" height="423px" style="border-radius: 10px;"></a></div>
+              <div class="item f"><a href="file:///C:/Users/INTEL/Desktop/CR/Newsletter-week%2311.pdf"><img src="./images/vol-11-3.png" width="300px" height="423px" style="border-radius: 10px;"></a></div>
+            </div>
+            <div class="next" style="right:-10%;">></div>
+            <div class="prev" style="left:-10%;"><</div>
+          </div><br><br><br><br>
 
       <!--profile flipcards-->
         <div class="row">
@@ -328,5 +440,30 @@
           <!--spacer--><div class="col-md-1"></div>
         </div><br><br><br><br><br><br><br><br><br><br><br><br>
       </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+            <script id="rendered-js">
+      var carousel = $(".carousel"),
+      currdeg = 0;
+
+      $(".next").on("click", { d: "n" }, rotate);
+      $(".prev").on("click", { d: "p" }, rotate);
+
+      function rotate(e) {
+        if (e.data.d == "n") {
+          currdeg = currdeg - 60;
+        }
+        if (e.data.d == "p") {
+          currdeg = currdeg + 60;
+        }
+        carousel.css({
+          "-webkit-transform": "rotateY(" + currdeg + "deg)",
+          "-moz-transform": "rotateY(" + currdeg + "deg)",
+          "-o-transform": "rotateY(" + currdeg + "deg)",
+          "transform": "rotateY(" + currdeg + "deg)" });
+
+      }
+      //# sourceURL=pen.js
+          </script>
   </body>
 </html>
