@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Primary Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="thumbnail" content="#">
+    <meta name="keywords" content="Campus radio">
+    <meta name="author" content="CR web-D team">
+
+    <title>Campus radio</title>
+
+    <!-- schedule CSS and JS -->
+    <link rel="stylesheet" href="schedule.css">
+    <script src="schedule.js"></script>
+
+    <!--Abhivahya-->
+    <style>
+    body {
+      background: inherit;
+      padding: 50px 0;
+      font: 15px/20px Arial, sans-serif;
+    }
+
+    .container-c {
+      margin: 0 auto;
+      width: 300px;
+      height: 432px;
+      position: relative;
+      perspective: 10000px;
+    }
+
+    .carousel {
+
+      position: absolute;
+      transform-style: preserve-3d;
+      transition: transform 1s;
+    }
+
+    .item {
+      display: block;
+      position: absolute;
+      background: #111;
+      width: 100%;
+      height: 423px;
+      line-height: 200px;
+      font-size: 5em;
+      text-align: center;
+      color: #FFF;
+      opacity: 0.95;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .a {
+      transform: rotateY(0deg) translateZ(310px);
+
+    }
+    .b {
+      transform: rotateY(60deg) translateZ(310px);
+
+    }
+    .c {
+      transform: rotateY(120deg) translateZ(310px);
+
+    }
+    .d {
+      transform: rotateY(180deg) translateZ(310px);
+
+    }
+    .e {
+      transform: rotateY(240deg) translateZ(310px);
+
+    }
+    .f {
+      transform: rotateY(300deg) translateZ(310px);
+
+    }
+
+    .next, .prev {
+      color: #222;
+      position: absolute;
+      top: 50%;
+      padding: 10px 16px;
+      cursor: pointer;
+      background: gray;
+      opacity: 0.8;
+      border-radius: 50px;
+      border-top: 1px solid #FFF;
+    }
+    .next:hover, .prev:hover { color: #000; }
+    .next:active, .prev:active {
+      top: 51%;
+    }
+    .next { right: 5em; }
+    .prev { left: 5em; }
+    </style>
+
+      <script>
+      window.console = window.console || function(t) {};
+    </script>
+
+
+      <script>
+      if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage("resize", "*");
+      }
+    </script>
+
+    <!--flipcard CSS and JS-->
+    <link href='bootstrap.css' rel='stylesheet' />
+    <link href='flipcard.css' rel='stylesheet' />
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="flipcard.js"></script>
+
+  </head>
+  <body onload="schedule()">
+
+    <!-- division will apperar briefly for 4 sec -->
+      <div class="full-height" id="id" style="display= none;" >
+        <h1>Upcoming events</h1>
+          <p>24-10-2020 : started new project24-10-2020 : started new project24-10-2020 : started new project</p>
+          <p>24-10-2020 : started new project24-10-2020 : started new project24-10-2020 : started new project</p>
+          <p>24-10-2020 : started new project24-10-2020 : started new project24-10-2020 : started new project</p>
+          <p>24-10-2020 : started new project24-10-2020 : started new project24-10-2020 : started new project</p>
+          <p>24-10-2020 : started new project24-10-2020 : started new project24-10-2020 : started new project</p>
+      </div>
+
+    <div class="container-fluid" style="postion: absolute;left:0px;top:0px;">
+        <div class="row">
+        <div class="col-md-3">
+          <!--spacer-->
+        </div>
+        <div class="col-md-6">
+          <!--this week's video-->
+            <br><br><br>
+            <p  style="font-size: 200%;text-align: center;">NASA Live :special talk</p>
+            <div class="video-container">
+              <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/21X5lGlDOfg" frameborder="0" loading="lazy" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+            </div>
+        </div>
+        <div class="col-md-3" style="text-align: center;">
+          <!--p>
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fiiserkcr%2F&tabs=timeline&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="100%" loading="lazy" height="500px" style="border:none;" scrolling="no" frameborder="0" allowTransparency="true" align="middle,center" allow="encrypted-media"></iframe>
+          </p-->
+        </div>
+      </div><br><br><br><br>
+
+      <!--Abhivahya-->
+        <h1 class="title">
+            Abhivahya
+            <br>
+            <small>The Campus Radio news letter</small>
+        </h1>
+          <div class="container-c" style="">
+            <div class="carousel  " style="transform: rotateY(0deg);">
+              <div class="item a"><a href="https://drive.google.com/file/d/1utxQgbXJbNA06Y0cHyqJA3DUVBmwaK-d/view"><img src="./images/october-monthly.png" width="300px" height="423px" style="border-radius: 10px;"></a></div>
+              <div class="item b"><a href="file:///C:/Users/INTEL/Desktop/CR/Newsletter-week%2311.pdf"><img src="./images/vol-11.png" width="300px" height="423px" style="border-radius: 10px;"></a></div>
+              <div class="item c"><a href="file:///C:/Users/INTEL/Desktop/CR/Newsletter-week%2311.pdf"><img src="./images/vol-11-3.png" width="300px" height="423px" style="border-radius: 10px;"></a></div>
+              <div class="item d"></div>
+              <div class="item e"><a href="file:///C:/Users/INTEL/Desktop/CR/Newsletter-week%2311.pdf"><img src="./images/vol-11-2.png" width="300px" height="423px" style="border-radius: 10px;"></a></div>
+              <div class="item f"><a href="file:///C:/Users/INTEL/Desktop/CR/Newsletter-week%2311.pdf"><img src="./images/vol-11-3.png" width="300px" height="423px" style="border-radius: 10px;"></a></div>
+            </div>
+            <div class="next" style="right:-10%;">></div>
+            <div class="prev" style="left:-10%;"><</div>
+          </div><br><br><br><br>
+
+      <!--profile flipcards-->
+        <div class="row">
+          <!--spacer--><div class="col-md-1"></div>
+          <div class="col-md-10">
+            <div class="row">
+              <h1 class="title">
+                  Meet our awesome team
+                  <br>
+                  <small>Campus Radio team 2019</small>
+              </h1>
+              <div class="col-md-12" onmouseleave="bk2normal()">
+                <div class="col-md-3 col-sm-6">
+                     <div class="card-container manual-flip" id="one" onmouseleave="rotatecard1()" onmouseenter="rotatecard1()" onmouseleave="rotatecard1()" onclick="rotatecard1()" >
+                        <div class="card">
+                            <div class="front">
+                                <div class="cover">
+                                    <img src="images/rotating_card_thumb.png"/>
+                                </div>
+                                <div class="user">
+                                    <img class="img-circle" src="images/Arita.jpg"/>
+                                </div>
+                                <div class="content">
+                                    <div class="main">
+                                        <h3 class="name">Arita Acharjee</h3>
+                                        <p class="profession">Public Relation Officer</p>
+                                        <p class="text-center">"some quote by person goes here .....Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"</p>
+                                    </div>
+                                    <div class="footer">
+                                      <button class="btn btn-simple"  title="Flip Card" >
+                                          <i class="fa fa-mail-forward"></i> Touch to flip
+                                    </div>
+                                </div>
+                            </div> <!-- end front panel -->
+                            <div class="back">
+                                <div class="header">
+                                    <h5 class="motto">"To be or not to be,  is my awesome motto!"</h5>
+                                </div>
+                                <div class="content">
+                                    <div class="main">
+                                        <h4 class="text-center">Job Description</h4>
+                                        <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+
+                                        <div class="stats-container">
+                                            <div class="stats">
+                                                <h4>235</h4>
+                                                <p>
+                                                    Followers
+                                                </p>
+                                            </div>
+                                            <div class="stats">
+                                                <h4>114</h4>
+                                                <p>
+                                                    Following
+                                                </p>
+                                            </div>
+                                            <div class="stats">
+                                                <h4>35</h4>
+                                                <p>
+                                                    Projects
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <div class="social-links text-center">
+                                        <a href="#" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                        <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                        <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                    </div>
+                                </div>
+                            </div> <!-- end back panel -->
+                        </div> <!-- end card -->
+                    </div> <!-- end card-container -->
+                </div> <!-- end col sm 3 -->
+                <div class="col-md-3 col-sm-6">
+                     <div class="card-container manual-flip" id="two" onmouseleave="rotatecard2()" onmouseenter="rotatecard2()" onmouseleave="rotatecard2()" onclick="rotatecard2()" >
+                        <div class="card">
+                          <div class="front">
+                              <div class="cover">
+                                  <img src="images/rotating_card_thumb.png"/>
+                              </div>
+                              <div class="user">
+                                  <img class="img-circle" src="images/Prajwal.jpg"/>
+                              </div>
+                              <div class="content">
+                                  <div class="main">
+                                      <h3 class="name">Prajwal Padmanabha</h3>
+                                      <p class="profession">Chief Operational Officer</p>
+                                      <p class="text-center">"some quote by person goes here .....Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"</p>
+                                  </div>
+                                  <div class="footer">
+                                        <i class="fa fa-mail-forward"></i> Touch to flip
+                                  </div>
+                              </div>
+                          </div> <!-- end front panel -->
+                          <div class="back">
+                              <div class="header">
+                                  <h5 class="motto">"To be or not to be,  is my awesome motto!"</h5>
+                              </div>
+                              <div class="content">
+                                  <div class="main">
+                                      <h4 class="text-center">Job Description</h4>
+                                      <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+
+                                      <div class="stats-container">
+                                          <div class="stats">
+                                              <h4>235</h4>
+                                              <p>
+                                                  Followers
+                                              </p>
+                                          </div>
+                                          <div class="stats">
+                                              <h4>114</h4>
+                                              <p>
+                                                  Following
+                                              </p>
+                                          </div>
+                                          <div class="stats">
+                                              <h4>35</h4>
+                                              <p>
+                                                  Projects
+                                              </p>
+                                          </div>
+                                      </div>
+
+                                  </div>
+                              </div>
+                              <div class="footer">
+                                  <div class="social-links text-center">
+                                      <a href="#" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                      <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                      <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                  </div>
+                              </div>
+                          </div> <!-- end back panel -->
+                        </div> <!-- end card -->
+                    </div> <!-- end card-container -->
+                </div> <!-- end col sm 3 -->
+                <div class="col-md-3 col-sm-6">
+                     <div class="card-container manual-flip" id="three" onmouseleave="rotatecard3()" onmouseenter="rotatecard3()" onmouseleave="rotatecard3()" onclick="rotatecard3()" >
+                        <div class="card">
+                            <div class="front">
+                                <div class="cover">
+                                    <img src="images/rotating_card_thumb.png"/>
+                                </div>
+                                <div class="user">
+                                    <img class="img-circle" src="images/Arijeet.jpg"/>
+                                </div>
+                                <div class="content">
+                                    <div class="main">
+                                        <h3 class="name">Arijeet</h3>
+                                        <p class="profession">Chief Financial Officer</p>
+                                        <p class="text-center">"some quote by person goes here .....Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"</p>
+                                    </div>
+                                    <div class="footer">
+                                          <i class="fa fa-mail-forward"></i> Touch to flip
+                                    </div>
+                                </div>
+                            </div> <!-- end front panel -->
+                            <div class="back">
+                                <div class="header">
+                                    <h5 class="motto">"To be or not to be,  is my awesome motto!"</h5>
+                                </div>
+                                <div class="content">
+                                    <div class="main">
+                                        <h4 class="text-center">Job Description</h4>
+                                        <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+
+                                        <div class="stats-container">
+                                            <div class="stats">
+                                                <h4>235</h4>
+                                                <p>
+                                                    Followers
+                                                </p>
+                                            </div>
+                                            <div class="stats">
+                                                <h4>114</h4>
+                                                <p>
+                                                    Following
+                                                </p>
+                                            </div>
+                                            <div class="stats">
+                                                <h4>35</h4>
+                                                <p>
+                                                    Projects
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <div class="social-links text-center">
+                                        <a href="#" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                        <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                        <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                    </div>
+                                </div>
+                            </div> <!-- end back panel -->
+                        </div> <!-- end card -->
+                    </div> <!-- end card-container -->
+                </div> <!-- end col sm 3 -->
+                <div class="col-md-3 col-sm-6">
+                     <div class="card-container manual-flip" id="four" onmouseleave="rotatecard4()" onmouseenter="rotatecard4()" onmouseleave="rotatecard4()" onclick="rotatecard4()" >
+                        <div class="card">
+                            <div class="front">
+                                <div class="cover">
+                                    <img src="images/rotating_card_thumb.png"/>
+                                </div>
+                                <div class="user">
+                                    <img class="img-circle" src="images/soumyajit.jpg"/>
+                                </div>
+                                <div class="content">
+                                    <div class="main">
+                                        <h3 class="name">Soumyajit Seth</h3>
+                                        <p class="profession">Ex Chief Executive Officer</p>
+                                        <p class="text-center">"some quote by person goes here .....Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"</p>
+                                    </div>
+                                    <div class="footer">
+                                          <i class="fa fa-mail-forward"></i> Touch to flip
+                                    </div>
+                                </div>
+                            </div> <!-- end front panel -->
+                            <div class="back">
+                                <div class="header">
+                                    <h5 class="motto">"To be or not to be,  is my awesome motto!"</h5>
+                                </div>
+                                <div class="content">
+                                    <div class="main">
+                                        <h4 class="text-center">Job Description</h4>
+                                        <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+
+                                        <div class="stats-container">
+                                            <div class="stats">
+                                                <h4>235</h4>
+                                                <p>
+                                                    Followers
+                                                </p>
+                                            </div>
+                                            <div class="stats">
+                                                <h4>114</h4>
+                                                <p>
+                                                    Following
+                                                </p>
+                                            </div>
+                                            <div class="stats">
+                                                <h4>35</h4>
+                                                <p>
+                                                    Projects
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <div class="social-links text-center">
+                                        <a href="#" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                        <a href="#" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                        <a href="#" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                    </div>
+                                </div>
+                            </div> <!-- end back panel -->
+                        </div> <!-- end card -->
+                    </div> <!-- end card-container -->
+                </div> <!-- end col sm 3 -->
+              </div> <!-- end row -->
+            </div>
+          </div>
+          <!--spacer--><div class="col-md-1"></div>
+        </div><br><br><br><br><br><br><br><br><br><br><br><br>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+            <script id="rendered-js">
+      var carousel = $(".carousel"),
+      currdeg = 0;
+
+      $(".next").on("click", { d: "n" }, rotate);
+      $(".prev").on("click", { d: "p" }, rotate);
+
+      function rotate(e) {
+        if (e.data.d == "n") {
+          currdeg = currdeg - 60;
+        }
+        if (e.data.d == "p") {
+          currdeg = currdeg + 60;
+        }
+        carousel.css({
+          "-webkit-transform": "rotateY(" + currdeg + "deg)",
+          "-moz-transform": "rotateY(" + currdeg + "deg)",
+          "-o-transform": "rotateY(" + currdeg + "deg)",
+          "transform": "rotateY(" + currdeg + "deg)" });
+
+      }
+      //# sourceURL=pen.js
+          </script>
+  </body>
+</html>
