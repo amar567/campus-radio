@@ -1,0 +1,58 @@
+    html, body {
+      height: 100%;
+      margin: 0;
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+
+    html {
+      overflow: scroll;
+      overflow-x: hidden;
+      }
+      ::-webkit-scrollbar {
+      width: 0px;
+      }
+
+      .no-scrl-bar {
+        width: 100%;
+        height: 500px;
+      }
+
+
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrl-bar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+      }
+      ::-webkit-scrollbar {
+          display: none;
+        }
+
+    .full-height {
+      height: 100%;
+      width:100%;
+      z-index: 10000;
+      background:cyan;
+      position: fixed;
+      left:0px;
+      top:0px;
+      text-align: center;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /*16:9*/
+      padding-top: 10px;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
