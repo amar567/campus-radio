@@ -144,7 +144,7 @@
               <p  style="font-size: 200%;text-align: center;">NASA Live :special talk</p>
               <div class="video-container">
                 <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/21X5lGlDOfg" frameborder="0" loading="lazy" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
-              </div>
+              </div><br><br><br><br>
 
             <!--Abhivahya-->
               <h1 class="title">
@@ -168,7 +168,7 @@
         <div class="col-md-3 fb-cont" style="align: center;text-align: center;">
             <iframe class="make-me-sticky" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fiiserkcr%2F&tabs=timeline&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="380px" loading="lazy" height="500px" style="border:none;" scrolling="no" frameborder="0" allowTransparency="true" align="middle,center" allow="encrypted-media"></iframe>
         </div>
-      </div><br><br><br><br>
+      </div>
 
       <!--profile flipcards-->
         <div class="row">
@@ -445,28 +445,7 @@
         </div><br><br><br><br><br><br><br><br><br><br><br><br>
       </div>
       <script src="./js/jquery.min.js"></script>
+      <script src="./js/carousel.js"></script>
 
-      <script id="rendered-js">
-      var carousel = $(".carousel"),
-      currdeg = 0;
-
-      $(".next").on("click", { d: "n" }, rotate);
-      $(".prev").on("click", { d: "p" }, rotate);
-
-      function rotate(e) {
-        if (e.data.d == "n") {
-          currdeg = currdeg - 60;
-        }
-        if (e.data.d == "p") {
-          currdeg = currdeg + 60;
-        }
-        carousel.css({
-          "-webkit-transform": "rotateY(" + currdeg + "deg)",
-          "-moz-transform": "rotateY(" + currdeg + "deg)",
-          "-o-transform": "rotateY(" + currdeg + "deg)",
-          "transform": "rotateY(" + currdeg + "deg)" });
-
-      }
-      </script>
   </body>
 </html>
