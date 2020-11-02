@@ -22,6 +22,24 @@
       font: 15px/20px Arial, sans-serif;
     }
 
+    .fb-cont{
+      height:163vh;
+    }
+
+    @media only screen and (max-width: 1454px) {
+         .fb-cont {
+          height:100%;
+        }
+      }
+
+    .make-me-sticky {
+      position: -webkit-sticky;
+    	position: sticky;
+    	top: 0;
+
+      padding: 0 15px;
+    }
+
     .container-c {
       margin: 0 auto;
       width: 300px;
@@ -106,7 +124,7 @@
   <body onload="schedule()">
 
     <!-- division will apperar briefly for 4 sec -->
-      <div class="full-height" id="id" style="display= none;" >
+      <div class="full-height" id="id" style="" >
         <h1>Upcoming events</h1>
           <p>24-10-2020 : started new project24-10-2020 : started new project24-10-2020 : started new project</p>
           <p>24-10-2020 : started new project24-10-2020 : started new project24-10-2020 : started new project</p>
@@ -116,11 +134,11 @@
       </div>
 
     <div class="container-fluid" style="postion: absolute;left:0px;top:0px;">
-        <div class="row">
-        <div class="col-md-3">
+        <div class="row" >
+          <div class="col-md-3" style="background: blue;">
           <!--spacer-->
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" >
             <!--this week's video-->
               <br><br><br>
               <p  style="font-size: 200%;text-align: center;">NASA Live :special talk</p>
@@ -147,10 +165,8 @@
                   <div class="prev" style="left:-10%;"><</div>
                 </div><br><br><br><br>
         </div>
-        <div class="col-md-3" style="text-align: center;">
-          <!--p>
-            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fiiserkcr%2F&tabs=timeline&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="100%" loading="lazy" height="500px" style="border:none;" scrolling="no" frameborder="0" allowTransparency="true" align="middle,center" allow="encrypted-media"></iframe>
-          </p-->
+        <div class="col-md-3 fb-cont" style="align: center;text-align: center;">
+            <iframe class="make-me-sticky" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fiiserkcr%2F&tabs=timeline&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="400px" loading="lazy" height="500px" style="border:none;" scrolling="no" frameborder="0" allowTransparency="true" align="middle,center" allow="encrypted-media"></iframe>
         </div>
       </div><br><br><br><br>
 
