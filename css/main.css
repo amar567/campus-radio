@@ -1,0 +1,67 @@
+body, html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;-ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  z-index: 1;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+  }
+  ::-webkit-scrollbar {
+  width: 0px;
+  }
+
+body {
+/* background image */
+background-image: url("file:///C:/Users/INTEL/Desktop/cr1/images/bg1.png");
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.trial{
+  position:relative;
+  height:100vh;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /*16:9*/
+  padding-top: 10px;
+  height: 0;
+  overflow: hidden;
+}
+
+.page-footer{
+  background: #222222;
+}
+
+.initial{
+  background: rgba(0, 0, 0,0.3);
+}
+
+.final{
+  background: rgba(0, 0, 0, 1);
+}
+
+#e4{
+  transition: top 0.3s;
+}
+
+ls{
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+ls @

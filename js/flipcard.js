@@ -27,6 +27,20 @@
       }
     }
 
+    function fivebk2normal() {
+      if (document.getElementById("five").classList.contains("hover")) {
+        document.getElementById("five").className = document.getElementById("five").className.replace(/\b hover\b/g, "");
+        e-=1
+      }
+    }
+
+    function sixbk2normal() {
+      if (document.getElementById("six").classList.contains("hover")) {
+        document.getElementById("six").className = document.getElementById("six").className.replace(/\b hover\b/g, "");
+        f-=1
+      }
+    }
+
     /*flips card one based on initial condition also resets all others to front*/
     var a=2
     function rotatecard1() {
@@ -36,7 +50,7 @@
       }else {
         onebk2normal()
       }
-      twobk2normal(),threebk2normal(),fourbk2normal()
+      twobk2normal(),threebk2normal(),fourbk2normal(),fivebk2normal(),sixbk2normal()
     }
 
     var b=2
@@ -47,7 +61,7 @@
       }else {
         twobk2normal()
       }
-      onebk2normal(),threebk2normal(),fourbk2normal()
+      onebk2normal(),threebk2normal(),fourbk2normal(),fivebk2normal(),sixbk2normal()
     }
 
     var c=2
@@ -58,7 +72,7 @@
       }else {
       threebk2normal()
       }
-      onebk2normal(),twobk2normal(),fourbk2normal()
+      onebk2normal(),twobk2normal(),fourbk2normal(),fivebk2normal(),sixbk2normal()
     }
 
     var d=2
@@ -69,11 +83,33 @@
       }else {
       fourbk2normal()
       }
-      onebk2normal(),twobk2normal(),threebk2normal()
+      onebk2normal(),twobk2normal(),threebk2normal(),fivebk2normal(),sixbk2normal()
+    }
+
+    var e=2
+    function rotatecard5() {
+      if (e%2 == 0) {
+        document.getElementById("five").className += " hover";
+        e+=1
+      }else {
+      fivebk2normal()
+      }
+      onebk2normal(),twobk2normal(),threebk2normal(),fourbk2normal(),sixbk2normal()
+    }
+
+    var f=2
+    function rotatecard6() {
+      if (f%2 == 0) {
+        document.getElementById("six").className += " hover";
+        f+=1
+      }else {
+      sixbk2normal()
+      }
+      onebk2normal(),twobk2normal(),threebk2normal(),fourbk2normal().fivebk2normal()
     }
 
 
     /*flips all back to front*/
     function bk2normal() {
-      onebk2normal(),twobk2normal(),threebk2normal(),fourbk2normal()
+      onebk2normal(),twobk2normal(),threebk2normal(),fourbk2normal(),fivebk2normal(),sixbk2normal()
     }

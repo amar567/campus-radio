@@ -1,6 +1,6 @@
   function schedule() {
-    setTimeout(fadeFunc, 1000);
-    setTimeout(clean, 3000);
+    setTimeout(fadeFunc, 2000);
+    setTimeout(clean, 5000);
   }
 
   function fadeFunc() {
