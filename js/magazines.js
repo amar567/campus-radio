@@ -10,7 +10,7 @@ function loadMags() {
 
 function removeMags() {
     removable = document.getElementsByClassName("added");
-    for (magazine of removable) {
-        magazine.remove();
+    while (removable.length > 0) {
+        removable[0].remove()
     }
 }
